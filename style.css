@@ -11,9 +11,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 60vh;
     text-align: center;
-   
 }
 
 .contenido-centrado {
@@ -24,17 +23,14 @@ main {
     color: rgb(255, 255, 255);
 }
 p.contenido-centrado{
- 
     font-weight: bold
 }
 
 /*Contenedor*/
 
 .contenedor {
-    width: 30vw;
+    width: 100%;
     max-width: 350px;
-    min-height: 300px;
-    padding: 10px;
     background-color:rgba(255, 255, 255, 0.13);
     border: 5px solid rgb(255, 255, 255);
     border-radius: 30px;
@@ -54,7 +50,7 @@ p.contenido-centrado{
 }
 
 #cita {
-    font-size: 25px;
+    font-size: 20px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -73,12 +69,18 @@ p.contenido-centrado{
 }
 
 #boton-cambiar-cita {
-    width: 120px;
+    width: 150px;
     height: 40px;
     font-size: 15px;
-    
+    margin: 5px;
+    border-radius: 15px;
 }
 
+.btn-primary:hover {
+    background-color: rgb(43, 43, 170);
+    border: 2px solid #08e008;
+   
+}
 
 /* Cronometro */
 
@@ -86,28 +88,24 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 40vh;
     text-align: center;
 }
 
 .contenedor-principal {
-    width: 80vw;
-    min-width: 600px;
-    min-height: 350px;
+    width: 100vw;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.contenedor-botones {
-    padding: 20px;
-}
+
 
 /* Cronometro */
 
 #cronometro {
     width: 100%;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: bold;
     user-select: none;
     font-family: 'Noto Sans Thai', sans-serif;
@@ -128,6 +126,7 @@ footer {
 #boton-inicio-pausa.iniciar,
 #boton-inicio-pausa.iniciar i {
     background-color: #08e008;
+    
 }
 
 #boton-inicio-pausa.pausar,
@@ -137,4 +136,14 @@ footer {
 
 #boton-reiniciar {
     background-color: red;
+}
+
+
+@media screen and (max-width:400px){
+    .contenedor {
+        width: 80%;
+    }
+    #cita {
+        font-size: 20px;
+    }
 }
